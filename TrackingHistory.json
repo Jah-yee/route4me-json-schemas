@@ -15,7 +15,7 @@
 			"description": "Unit of speed (e.g. mph, km/h)"
 		},
 		"lt": {
-			"type": "number",
+			"type": "string",
 			"nullable": true,
 			"title": "Latitude",
 			"description": "Latitude at the time of the location transaction event"
@@ -27,7 +27,7 @@
 			"description": "Member ID"
 		},
 		"lg": {
-			"type": "number",
+			"type": "string",
 			"nullable": true,
 			"title": "Longitude",
 			"description": "Longitude at the time of the location transaction event"
