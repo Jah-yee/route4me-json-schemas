@@ -3,13 +3,19 @@
 	"type": "object",
 	"properties": {
 		"s": {
-			"type": "string",
+			"type": "number",
 			"nullable": true,
 			"title": "Speed",
 			"description": "Speed at the time of the location transaction event"
 		},
-		"lt": {
+		"su": {
 			"type": "string",
+			"nullable": true,
+			"title": "Speed Unit",
+			"description": "Unit of speed (e.g. mph, km/h)"
+		},
+		"lt": {
+			"type": "number",
 			"nullable": true,
 			"title": "Latitude",
 			"description": "Latitude at the time of the location transaction event"
@@ -21,7 +27,7 @@
 			"description": "Member ID"
 		},
 		"lg": {
-			"type": "string",
+			"type": "number",
 			"nullable": true,
 			"title": "Longitude",
 			"description": "Longitude at the time of the location transaction event"
@@ -44,11 +50,53 @@
 			"title": "Friendly Timestamp",
 			"description": "The original timestamp in a human readable timestamp format at the moment location transaction event"
 		},
+		"alt": {
+			"type": "number",
+			"nullable": true,
+			"title": "Altitude",
+			"description": "Altitude at the time of the location transaction event (meters)"
+		},
 		"src": {
 			"type": "string",
 			"nullable": true,
-			"title": "SRC",
-			"description": "Package src (e.g. 'R4M')"
+			"title": "Source Name",
+			"description": "Source name of the location data (e.g. 'R4M' for Route4Me app)"
+		},
+		"device_time": {
+			"type": "string",
+			"nullable": true,
+			"title": "Device Time",
+			"description": "Local time on the device when the location was recorded"
+		},
+		"device_tz": {
+			"type": "string",
+			"nullable": true,
+			"title": "Device Timezone",
+			"description": "Timezone of the device (e.g. America/New_York)"
+		},
+		"av": {
+			"type": "string",
+			"nullable": true,
+			"title": "App Version",
+			"description": "Version of the app that reported the location (e.g. 5_1_1)"
+		},
+		"dt": {
+			"type": "string",
+			"nullable": true,
+			"title": "Device Type",
+			"description": "Device platform or type (e.g. android, ios)"
+		},
+		"abn": {
+			"type": "string",
+			"nullable": true,
+			"title": "App Build Number",
+			"description": "App build number or route identifier associated with the tracking event"
+		},
+		"did": {
+			"type": "string",
+			"nullable": true,
+			"title": "Device ID",
+			"description": "Unique identifier of the device that reported the location"
 		}
 	}
 }
